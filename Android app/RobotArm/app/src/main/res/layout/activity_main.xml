@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/button_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect"
+            android:textSize="20dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            />
+
+    <TextView
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="192.168.4.1"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="200dp"
+    />
+
+    <TextView
+            android:id="@+id/motor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ip_address"
+            android:text="MOTOR 5"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_marginTop="35dp"
+
+    />
+
+    <Button
+            android:id="@+id/button_open"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="OPEN"
+            android:textSize="20dp"
+            android:layout_below="@id/ip_address"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+            android:backgroundTint="@color/blue"
+    />
+
+    <Button
+            android:id="@+id/button_close"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="CLOSE"
+            android:textSize="20dp"
+            android:layout_below="@id/ip_address"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/button_open"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/blue"
+    />
+
+    <TextView
+            android:id="@+id/motor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_open"
+            android:text="MOTOR 4"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_left"
+            android:layout_below="@+id/button_open"
+            android:id="@+id/servo4_turnOn"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+
+
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_right"
+            android:layout_below="@+id/button_close"
+            android:id="@+id/servo4_turnOff"
+            android:layout_toEndOf="@+id/button_open"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+    />
+
+    <TextView
+            android:id="@+id/motor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/servo4_turnOn"
+            android:text="MOTOR 3"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_marginTop="60dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/arrow_upward_24"
+            android:id="@+id/Servo3_0"
+            android:layout_below="@+id/servo4_turnOff"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_down_right"
+            android:id="@+id/Servo3_45"
+            android:layout_below="@+id/servo4_turnOff"
+            android:layout_toEndOf="@+id/Servo3_0"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_right"
+            android:id="@+id/Servo3_90"
+            android:layout_below="@+id/servo4_turnOff"
+            android:layout_toEndOf="@+id/Servo3_45"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+    />
+
+    <TextView
+            android:id="@+id/motor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Servo3_0"
+            android:text="MOTOR 2"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_marginTop="90dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/arrow_upward_24"
+            android:id="@+id/Servo2_0"
+            android:layout_below="@+id/Servo3_0"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="100dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_down_right"
+            android:id="@+id/Servo2_45"
+            android:layout_below="@+id/Servo3_45"
+            android:layout_toEndOf="@+id/Servo2_0"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_right"
+            android:id="@+id/Servo2_90"
+            android:layout_below="@+id/Servo3_90"
+            android:layout_toEndOf="@+id/Servo3_45"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_left"
+            android:id="@+id/Servo1_180"
+            android:layout_below="@+id/Servo1_135"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="130dp"
+    />
+
+    <TextView
+            android:id="@+id/motor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Servo2_0"
+            android:text="MOTOR 1"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_marginTop="130dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_subdirectory_arrow_right_24"
+            android:id="@+id/Servo1_135"
+            android:layout_below="@+id/Servo2_0"
+            android:scaleX="-1"
+            android:scaleY="-1"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="100dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/arrow_upward_24"
+            android:id="@+id/Servo1_90"
+            android:layout_below="@+id/Servo2_0"
+            android:layout_toEndOf="@+id/Servo1_135"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_subdirectory_arrow_left_24"
+            android:id="@+id/Servo1_45"
+            android:layout_below="@+id/Servo2_0"
+            android:layout_toEndOf="@+id/Servo1_90"
+            android:scaleX="-1"
+            android:scaleY="-1"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+    />
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_baseline_right"
+            android:id="@+id/Servo1_0"
+            android:layout_below="@+id/Servo1_45"
+            android:layout_toEndOf="@+id/Servo1_180"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+    />
+
+
+
+
+
+
+
+
+</RelativeLayout>
