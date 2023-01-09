@@ -8,6 +8,7 @@ Equipment:
 1. Android app
 2. NodeMCU ESP8266 for Access Point
 3. NodeMCU ESP8266 for Control Robot Arm
+4. 5 Servo motors
 
 Functionality:
 
